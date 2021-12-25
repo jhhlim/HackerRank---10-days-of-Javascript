@@ -1,26 +1,4 @@
-'use strict';
 
-process.stdin.resume();
-process.stdin.setEncoding('utf-8');
-
-let inputString = '';
-let currentLine = 0;
-
-process.stdin.on('data', inputStdin => {
-    inputString += inputStdin;
-});
-
-process.stdin.on('end', _ => {
-    inputString = inputString.trim().split('\n').map(string => {
-        return string.trim();
-    });
-    
-    main();    
-});
-
-function readLine() {
-    return inputString[currentLine++];
-}
 
 /**
 *   The variables 'firstInteger', 'firstDecimal', and 'firstString' are declared for you -- do not modify them.
@@ -46,11 +24,11 @@ function performOperation(secondInteger, secondDecimal, secondString) {
     
     // Write code that uses console.log to print the sum of the 'firstInteger' and 'secondInteger' (converted to a Number        type) on a new line.
     
-    
+    console.log(Number(firstInteger)+Number(secondInteger));
     // Write code that uses console.log to print the sum of 'firstDecimal' and 'secondDecimal' (converted to a Number            type) on a new line.
     
-    
+    console.log(Number(firstDecimal)+Number(secondDecimal));
     // Write code that uses console.log to print the concatenation of 'firstString' and 'secondString' on a new line. The        variable 'firstString' must be printed first.
-    
+    console.log(firstString.concat('',secondString));
 }
 
