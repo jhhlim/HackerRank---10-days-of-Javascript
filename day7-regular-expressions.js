@@ -10,7 +10,6 @@ function regexVar() {
        return re;
        
        
-//https://stackoverflow.com/questions/8327705/what-are-and-in-regular-expressions
     /*
      * Do not remove the return statement
      */
