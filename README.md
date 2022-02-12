@@ -1,3 +1,3 @@
 # HackerRank-10-days-of-Javascript
 
-10 days of javascript
+Complete 10 days of javascript
